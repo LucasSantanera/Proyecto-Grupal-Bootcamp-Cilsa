@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Tabla categoría sandwiches</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/style-categoria-sandwich.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Gran Sabor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="pizzas.html">Pizzas</a>
+                                <a class="dropdown-item" href="ensaladas.html">Ensaladas</a>
+                                <a class="dropdown-item" href="sandwiches.html">Sandwiches</a>
+                                <a class="dropdown-item" href="bebidas.html">Bebidas</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5 pt-5">
+            <h2 class="mb-4 text-center">Lista de Sandwiches</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Ingredientes</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Disponible</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="assets/categoria-sandwich/sandwich-club.jpeg" alt="Sandwich Club" class="product-img"></td>
+                            <td>Sandwich Club</td>
+                            <td>Pollo, Bacon, Lechuga, Tomate</td>
+                            <td>$6.50</td>
+                            <td>Sí</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/categoria-sandwich/sandwich-bacon-cheddar.jpeg" alt="Sandwich Bacon Cheddar" class="product-img"></td>
+                            <td>Sandwich Bacon Cheddar</td>
+                            <td>Bacon, Cheddar, Lechuga, Mayonesa</td>
+                            <td>$7.00</td>
+                            <td>Sí</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/categoria-sandwich/sandwich-veggie.jpeg" alt="Sandwich Veggie" class="product-img"></td>
+                            <td>Sandwich Veggie</td>
+                            <td>Vegetales frescos, Hummus</td>
+                            <td>$5.50</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 ">Gran Sabor</a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Gran Sabor, INC</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-facebook"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
