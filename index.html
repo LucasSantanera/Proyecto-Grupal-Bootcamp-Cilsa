@@ -1,346 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gran Sabor</title>
     <!--CDN Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!--CDN Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!--CSS-->
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <!--ICON-->
-            <a class="navbar-brand" href="/">Gran Sabor</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container-fluid">
+        <!--ICON-->
+        <a class="navbar-brand" href="/">Gran Sabor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorias
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
-                            <a class="dropdown-item" href="">Pizzas</a>
-                            <a class="dropdown-item" href="">Ensaladas</a>
-                            <a class="dropdown-item" href="">Sandwich</a>
-                            <a class="dropdown-item" href="">Bebidas</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="d-md-none">
-                    <ul class="navbar-nav me-auto-mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Perfil</a>
-                        </li>
-                    </ul>
-                </div>          
-                <div class="d-none d-md-flex gap-2">
-                    <a class="nav-item nav-link p-1" href="">
-                        <!--Carrito-->
-                        <i class="bi bi-basket" style="font-size: 1.2rem;"></i>
-                    </a>
-                    <a class="nav-item nav-link p-1" href="">
-                        <!--Usuario-->
-                        <i class="bi bi-person" style="font-size: 1.2rem;"></i>
-                    </a>
-                </div>
-            </div>
-        </div>        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorias
+              </a>
+              <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                <a class="dropdown-item" href="">Pizzas</a>
+                <a class="dropdown-item" href="">Ensaladas</a>
+                <a class="dropdown-item" href="">Sandwich</a>
+                <a class="dropdown-item" href="">Bebidas</a>
+              </div>
+            </li>
+          </ul>
+          <div class="d-md-none">
+            <ul class="navbar-nav me-auto-mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Perfil</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-md-flex gap-2">
+            <a class="nav-item nav-link p-1" href="">
+              <!--Carrito-->
+              <i class="bi bi-basket" style="font-size: 1.2rem"></i>
+            </a>
+            <a class="nav-item nav-link p-1" href="">
+              <!--Usuario-->
+              <i class="bi bi-person" style="font-size: 1.2rem"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <!--MOBILE-->
-            <img 
-                src="https://img.freepik.com/foto-gratis/hierbas-secas-alto-angulo-espolvoreadas-sobre-pizza_23-2148765337.jpg?t=st=1721963638~exp=1721967238~hmac=d511b8807f160f316a20a0935e54296a01c2f20d900fdc6eb6e3e24c24c91747&w=740" 
-                class="d-block d-md-none w-100" 
-                alt="..."
-            >
-            <!--DESKTOP-->
-            <img 
-                src="https://img.freepik.com/foto-gratis/vista-superior-rebanadas-pizza-salami_23-2148765311.jpg?t=st=1721962742~exp=1721966342~hmac=a452ff22635ef1636bb3038ae99c3b42853d79b8fb01f1b409db6d15df68e39d&w=740" 
-                class="d-none d-md-block  w-100" 
-                alt="..."
-            >
-            <div class="carousel-caption d-block text-start">
-              <h3 class="fs-1">Saborea nuestros deliciosos platos</h3>
-              <p>Tenemos una amplia selección de recetas fáciles, saludables y llenas de sabor para que disfrutes en casa</p>
-              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Explorar Menú</a> </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!--MOBILE-->
-            <img 
-            src="https://img.freepik.com/foto-gratis/ensalada-fresca-alto-angulo-placa-negra_23-2148537225.jpg?t=st=1721963765~exp=1721967365~hmac=5d00428b53a21e92ee38be9015dad91cec7e6cd7099e677cbb0fe0e195cee31e&w=740" 
-            class="d-block d-md-none w-100" 
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--MOBILE-->
+          <img
+            src="https://img.freepik.com/foto-gratis/hierbas-secas-alto-angulo-espolvoreadas-sobre-pizza_23-2148765337.jpg?t=st=1721963638~exp=1721967238~hmac=d511b8807f160f316a20a0935e54296a01c2f20d900fdc6eb6e3e24c24c91747&w=740"
+            class="d-block d-md-none w-100"
             alt="..."
-            >
-            <!--DESKTOP-->
-            <img 
-                src="https://img.freepik.com/foto-gratis/ensalada-tomate-microgreens-mixtos-queso-camembert_2829-4817.jpg?t=st=1721962992~exp=1721966592~hmac=116649db99dce378ac6128f88b13ea81fdaac1e446a96b655bb94ad8eb2c9759&w=740" 
-                class="d-none d-md-block  w-100" 
-                alt="..."
-            >
-            <div class="carousel-caption d-block">
-              <h3 class="fs-1">Los mejores productos frescos</h3>
-              <p>Trabajamos con proveedores locales para llevarte frutas, verduras y carnes frescas cada día.</p>
-              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Conocé Más</a> </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!--MOBILE-->
-            <img 
-                src="https://img.freepik.com/foto-gratis/hombre-preparando-comida-llevar-entrega_23-2149025794.jpg?t=st=1721964056~exp=1721967656~hmac=b3f74f31d7091967129ec252b84b50fc551361e52ab471d9aa07cad18e6125c9&w=740" 
-                class="d-block d-md-none w-100" 
-                alt="..."
-            >
-            <!--DESKTOP-->
-            <img 
-                src="https://img.freepik.com/foto-gratis/repartidor-chaqueta-amarilla-abriendo-mochila-amarilla-tomando-bolsa-orden_1268-16751.jpg?t=st=1721963035~exp=1721966635~hmac=58b62f360ec54bd31cdc925ac8fd48833eb8a88a74c02c7033e85cb78114be87&w=1380" 
-                class="d-none d-md-block  w-100" 
-                alt="..."
-            >
-            <div class="carousel-caption d-block text-end">
-              <h3 class="fs-1">Envíos gratis por tiempo limitado</h3>
-              <p>En pedidos mayores a $3550 el envío va por nuestra cuenta en todo el país.</p>
-              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Comprar Ahora</a> </p>
-            </div>
+          />
+          <!--DESKTOP-->
+          <img
+            src="https://img.freepik.com/foto-gratis/vista-superior-rebanadas-pizza-salami_23-2148765311.jpg?t=st=1721962742~exp=1721966342~hmac=a452ff22635ef1636bb3038ae99c3b42853d79b8fb01f1b409db6d15df68e39d&w=740"
+            class="d-none d-md-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-block text-start">
+            <h3 class="fs-1">Saborea nuestros deliciosos platos</h3>
+            <p>
+              Tenemos una amplia selección de recetas fáciles, saludables y
+              llenas de sabor para que disfrutes en casa
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#selector-categorias"
+                >Explorar Menú</a
+              >
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <!--MOBILE-->
+          <img
+            src="https://img.freepik.com/foto-gratis/ensalada-fresca-alto-angulo-placa-negra_23-2148537225.jpg?t=st=1721963765~exp=1721967365~hmac=5d00428b53a21e92ee38be9015dad91cec7e6cd7099e677cbb0fe0e195cee31e&w=740"
+            class="d-block d-md-none w-100"
+            alt="..."
+          />
+          <!--DESKTOP-->
+          <img
+            src="https://img.freepik.com/foto-gratis/ensalada-tomate-microgreens-mixtos-queso-camembert_2829-4817.jpg?t=st=1721962992~exp=1721966592~hmac=116649db99dce378ac6128f88b13ea81fdaac1e446a96b655bb94ad8eb2c9759&w=740"
+            class="d-none d-md-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-block">
+            <h3 class="fs-1">Los mejores productos frescos</h3>
+            <p>
+              Trabajamos con proveedores locales para llevarte frutas, verduras
+              y carnes frescas cada día.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#selector-categorias"
+                >Conocé Más</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--MOBILE-->
+          <img
+            src="https://img.freepik.com/foto-gratis/hombre-preparando-comida-llevar-entrega_23-2149025794.jpg?t=st=1721964056~exp=1721967656~hmac=b3f74f31d7091967129ec252b84b50fc551361e52ab471d9aa07cad18e6125c9&w=740"
+            class="d-block d-md-none w-100"
+            alt="..."
+          />
+          <!--DESKTOP-->
+          <img
+            src="https://img.freepik.com/foto-gratis/repartidor-chaqueta-amarilla-abriendo-mochila-amarilla-tomando-bolsa-orden_1268-16751.jpg?t=st=1721963035~exp=1721966635~hmac=58b62f360ec54bd31cdc925ac8fd48833eb8a88a74c02c7033e85cb78114be87&w=1380"
+            class="d-none d-md-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-block text-end">
+            <h3 class="fs-1">Envíos gratis por tiempo limitado</h3>
+            <p>
+              En pedidos mayores a $3550 el envío va por nuestra cuenta en todo
+              el país.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#selector-categorias"
+                >Comprar Ahora</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-
-      <main >
-        <!--PRODUCTOS-->
-
-        <!--SELECTOR DE CATEGORÍAS-->
-        <section class="container" id="selector-categorias">
-            <p class="fs-2">Seleccionar Categorías</p>
-            <div class="row gap-4">
-                <div class="col d-flex justify-content-center p-0">
-                    <a href="#pizzas" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
-                    <img 
-                        src="assets/categorias/porcion-de-pizza.png" 
-                        alt="pizzas"
-                        style="width: 25px; height: 25px;">
-                    <span class="fs-4 text-dark-emphasis">Pizzas</span>
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center p-0">
-                    <a href="#ensaladas" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
-                    <img 
-                        src="assets/categorias/ensalada.png" 
-                        alt="ensaladas"
-                        style="width: 25px; height: 25px;">
-                    <span class="fs-4 text-dark-emphasis">Ensaladas</span>
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center p-0">
-                    <a href="#Sandwich" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
-                    <img 
-                        src="assets/categorias/sandwich.png" 
-                        alt="Sandwich"
-                        style="width: 25px; height: 25px;">
-                    <span class="fs-4 text-dark-emphasis">Sandwich</span>
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center p-0">
-                    <a href="#Bebidas" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
-                    <img 
-                        src="assets/categorias/bebidas-sin-alcohol.png" 
-                        alt="Bebidas"
-                        style="width: 25px; height: 25px;">
-                    <span class="fs-4 text-dark-emphasis">Bebidas</span>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-    <!--CATEGORIAS PRODUCTOS-->
-        <section class="container-fluid" id="categorias">
-            <section class="text-center mb-5" id="pizzas">
-                <h3 class="display-6">Pizzas</h3>
-                <div 
-                    id="contenedor-pizzas"                
-                    class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-                >
-                    
-                    <!--PRODUCTO-->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img
-                                class="card-img-top" 
-                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
-                                alt=""
-                            >
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">Item 1</h5>
-                                    <span>$18.00</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"></div>
-                                <div class="text-center">
-                                    <a href="" class="btn btn-outline-success mt-auto">
-                                       Añadir al carrito         
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="text-center mb-5" id="ensaladas">
-                <h3 class="display-6">Ensaladas</h3>
-                <div 
-                    id="contenedor-ensaladas"                
-                    class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-                >
-                    
-                    <!--PRODUCTO-->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img
-                                class="card-img-top" 
-                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
-                                alt=""
-                            >
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">Item 1</h5>
-                                    <span>$18.00</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"></div>
-                                <div class="text-center">
-                                    <a href="" class="btn btn-outline-success mt-auto">
-                                       Añadir al carrito         
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="text-center mb-5" id="Sandwich">
-                <h3 class="display-6">Sandwich</h3>
-                <div 
-                    id="contenedor-sandwich"
-                    class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-                >
-                    
-                    <!--PRODUCTO-->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img
-                                class="card-img-top" 
-                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
-                                alt=""
-                            >
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">Item 1</h5>
-                                    <span>$18.00</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"></div>
-                                <div class="text-center">
-                                    <a href="" class="btn btn-outline-success mt-auto">
-                                       Añadir al carrito         
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="text-center mb-5" id="Bebidas">
-                <h3 class="display-6">Bebidas</h3>
-                <div 
-                    id="contenedor-bebidas"
-                    class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-                >
-                    
-                    <!--PRODUCTO-->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img
-                                class="card-img-top" 
-                                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
-                                alt=""
-                            >
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="fw-bolder">Item 1</h5>
-                                    <span>$18.00</span>
-                                </div>
-                            </div>
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent"></div>
-                                <div class="text-center">
-                                    <a href="" class="btn btn-outline-success mt-auto">
-                                       Añadir al carrito         
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </section>
-      </main>
-      
-      <div 
-        class="container"
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
       >
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 ">Gran Sabor</a>
-                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Gran Sabor, INC</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <main>
+      <!--PRODUCTOS-->
+
+      <!--SELECTOR DE CATEGORÍAS-->
+      <section class="container" id="selector-categorias">
+        <p class="fs-2">Seleccionar Categorías</p>
+        <div class="row gap-4">
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#pizzas"
+              class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none"
+            >
+              <img
+                src="assets/categorias/porcion-de-pizza.png"
+                alt="pizzas"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-4 text-dark-emphasis">Pizzas</span>
+            </a>
+          </div>
+
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#ensaladas"
+              class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none"
+            >
+              <img
+                src="assets/categorias/ensalada.png"
+                alt="ensaladas"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-4 text-dark-emphasis">Ensaladas</span>
+            </a>
+          </div>
+
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#Sandwich"
+              class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none"
+            >
+              <img
+                src="assets/categorias/sandwich.png"
+                alt="Sandwich"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-4 text-dark-emphasis">Sandwich</span>
+            </a>
+          </div>
+
+          <div class="col d-flex justify-content-center p-0">
+            <a
+              href="#Bebidas"
+              class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none"
+            >
+              <img
+                src="assets/categorias/bebidas-sin-alcohol.png"
+                alt="Bebidas"
+                style="width: 25px; height: 25px"
+              />
+              <span class="fs-4 text-dark-emphasis">Bebidas</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--CATEGORIAS PRODUCTOS-->
+      <section class="container-fluid" id="categorias">
+        <section class="text-center mb-5" id="pizzas">
+          <h3 class="display-6">Pizzas</h3>
+          <div
+            id="contenedor-pizzas"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Item 1</h5>
+                    <span>$18.00</span>
+                  </div>
+                </div>
+                <div
+                  class="card-footer p-4 pt-0 border-top-0 bg-transparent"
+                ></div>
+                <div class="text-center">
+                  <a href="" class="btn btn-outline-success mt-auto">
+                    Añadir al carrito
+                  </a>
+                </div>
+              </div>
             </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-facebook"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-twitter-x"></i></a></li>
-            </ul>
-        </footer>
-      </div>
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="ensaladas">
+          <h3 class="display-6">Ensaladas</h3>
+          <div
+            id="contenedor-ensaladas"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Item 1</h5>
+                    <span>$18.00</span>
+                  </div>
+                </div>
+                <div
+                  class="card-footer p-4 pt-0 border-top-0 bg-transparent"
+                ></div>
+                <div class="text-center">
+                  <a href="" class="btn btn-outline-success mt-auto">
+                    Añadir al carrito
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="Sandwich">
+          <h3 class="display-6">Sandwich</h3>
+          <div
+            id="contenedor-sandwich"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Item 1</h5>
+                    <span>$18.00</span>
+                  </div>
+                </div>
+                <div
+                  class="card-footer p-4 pt-0 border-top-0 bg-transparent"
+                ></div>
+                <div class="text-center">
+                  <a href="" class="btn btn-outline-success mt-auto">
+                    Añadir al carrito
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="text-center mb-5" id="Bebidas">
+          <h3 class="display-6">Bebidas</h3>
+          <div
+            id="contenedor-bebidas"
+            class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <!--PRODUCTO-->
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                  alt=""
+                />
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h5 class="fw-bolder">Item 1</h5>
+                    <span>$18.00</span>
+                  </div>
+                </div>
+                <div
+                  class="card-footer p-4 pt-0 border-top-0 bg-transparent"
+                ></div>
+                <div class="text-center">
+                  <a href="" class="btn btn-outline-success mt-auto">
+                    Añadir al carrito
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >Gran Sabor</a
+          >
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >&copy; 2024 Gran Sabor, INC</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href=""
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <!--CDN Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!--JAVASCRIPT-->
     <script type="module" src="lib/pages/home.js"></script>
-</body>
+  </body>
 </html>
